@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: configurationservice
+
+  r2dbc:
+    url: r2dbc:postgresql://ep-summer-cloud-adbsahn8-pooler.c-2.us-east-1.aws.neon.tech/neondb
+    username: neondb_owner
+    password: npg_2ZfaetrWy4OG
+    pool:
+      enabled: true
+      initial-size: 5
+      max-size: 10
+    properties:
+      sslMode: require
+      preparedStatementCacheQueries: 0
+
+  main:
+    web-application-type: reactive
+
+logging:
+  level:
+    root: INFO
+    org.springframework.r2dbc: DEBUG
+    org.springframework.data.r2dbc: DEBUG
+    reactor.core.publisher: DEBUG
+
+server:
+  port: 5004
+
+# Configuración de OpenAPI / Swagger
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    operations-sorter: alpha
+    tags-sorter: alpha
