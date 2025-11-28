@@ -18,8 +18,10 @@ This PRS initiative for the municipality of Lima offers the possibility of manag
 3. **Navigate** into backend:  
    `cd AS232S5_PRS_COE-fe/backend`  
 4. **Run** Spring Boot app:  
-   `./mvnw spring-boot:run`  
-5. **Install** dependencies and **serve** the Angular app:  
+   `./mvnw spring-boot:run`
+3. **Navigate** into frontend:  
+   `cd AS232S5_PRS_COE-fe/frontend` 
+6. **Install** dependencies and **serve** the Angular app:  
    `npm install`  
    `ng run dev`
 ## How to use the application (Asset Management)
